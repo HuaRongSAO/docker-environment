@@ -1,7 +1,8 @@
-jenkins:
-  restart: always
-  image: jenkins
-  ports:
-    - "8080: 8080"
-    - "50000: 50000"
-  volumes:
+version: '3.0'
+services:
+  mongo:
+    image: mongo:3.2
+    volumes:
+    - './database/mongo:/data/db'
+    ports:
+    - 27017:27017
