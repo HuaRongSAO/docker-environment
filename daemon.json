@@ -1,3 +1,4 @@
 {
-  "registry-mirrors": ["https://registry.docker-cn.com"]
+    "registry-mirrors": ["https://registry.docker-cn.com"],
+    "dns": ["1.2.4.8", "114.114.114.114", "8.8.8.8"]
 }
